@@ -1,3 +1,11 @@
+import PropTypes from "prop-types"
+
+PokemonCard.PropTypes = {
+  pokemon : PropTypes.shape({
+    name : PropTypes.string.isRequired,
+    imgSrc: PropTypes.string,
+  }).isRequired
+}
 
 function PokemonCard ({pokemon}){
   
