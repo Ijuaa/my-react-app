@@ -1,6 +1,14 @@
 function Navbar({PokemonName, handleClick}) {
+ 
+ const handlePokemonClick = () => {
+    if (PokemonName === "pikachu"){
+      alert('pika pikachu !!!');
+    }
+    handleClick()
+  }
+  
     return (
-        <button onClick={handleClick} key = {PokemonName.name}>
+        <button onClick={handlePokemonClick} key = {PokemonName.name}>
           {PokemonName}
         </button>
       );
